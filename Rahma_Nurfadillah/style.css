@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    padding: 0;
+    width: 100%;
+    position: fixed;
+}
+
+/* header1 */
+.header-slogan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bdb76b;
+    color: white;
+    padding: 1.4rem 7%;
+    height: 3px;
+    cursor: pointer;
+}
+
+/* slogan */
+.left{
+    font-size:large;
+    font-family: monospace;
+}
+
+/* location */
+.right a{
+    text-decoration: none;
+    color: white;
+}
+
+.right :hover{
+    color: black;
+    transition: 0.5s;
+}
+
+/* header navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fcf6f0;
+    padding: 1rem 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #faf0e6;
+}
+
+.logo img{
+    width: 14rem;
+}
+
+/* menu list list */
+.menu{
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4 rem;
+    color: black;
+}
+
+.menu a:hover{
+    color: #545a2c ;
+}
+
+.menu a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #545a2c;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.menu a:hover::after{
+    transform: scaleX(0.6);
+}
+
+/* dropdown */
+
+/* batas dropdown */
+
+/* icon kanan */
+.icon a{
+    color: black;
+    margin: 0 0.2rem;
+}
+
+.icon i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.icon .order{
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem 1rem;
+    border: 3px solid #545a2c;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.order:hover{
+    transform: scale(1.1);
+    background: #545a2c;
+    border: 1px solid white;
+    color: #faf0e6;
+}
+/* search */
+#search{
+    font-size: 1.2rem;
+}
+
+nav .search{
+    display: none;
+    top: 100%;
+    margin: 1rem 7%;
+    background-color: transparent;
+    right: 0;
+    width: 15%;
+    height: 2rem;
+    position: absolute;
+}
+
+nav .search input{
+    width: 100%;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    margin-right: 7%;
+    border-radius: 5px;
+    padding: 0 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+nav .search.active{
+    display: inline-block;
+}
+
+/* hamburger menu */
+#bar{
+    display: none;
+}
+
+/* content */
+.tulisan{
+    width: 100%;
+    height: 100vh;
+    background: url(img/gambarBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.tulisan .tulisan-dalam{
+    padding: 1.4rem 8%;
+    max-width: 60%;
+}
+
+.tulisan .tulisan-dalam h1{
+    padding-top: 180%;
+    font-size: 2rem;
+    color: #b0bf1a;
+}
+
+.tulisan .tulisan-dalam a{
+    max-width: 75%;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #b0bf1a;
+    border-radius: 1px;
+    font-size: 16px;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tulisan .tulisan-dalam a:hover{
+    transform: scale(1.1);
+    background: #545a2c;
+    border: 1px solid white;
+}
+
+/* test */
+.icon-product{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#f8f6f6;
+    padding: 2rem 7%;
+    font-size: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    gap: 7rem;
+}
+
+.icon-product p{
+    font-size: 16px;
+    text-align: center;
+    padding: 1.4rem 7%;
+    color: #aea967;
+}
+
+
+/* product */
+.our-menu-food{
+    padding: 2rem 7%;
+    padding-top: 0;
+    background-color: #f8f6f6;
+}
+
+.our-menu-food h1{
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.main-menu-food{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-food-content{
+    width:100%;
+}
+
+.menu-food-content img{
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+.menu-food-text{
+    padding: 2rem 0;
+    text-align: center;
+    max-width: 15rem;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu-food-text h2{
+    color: black;
+    font-size: 20px;
+}
+
+.menu-food-text p{
+    color:black;
+    font-size:15px;
+    text-align: justify;
+}
+
+
+/* about */
+.about{
+    padding: 5rem 7% 1.4rem;
+    padding-top: 0;
+    background-color: #f8f6f6;
+}
+
+.about h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: black;
+}
+
+.about-text {
+    font-size: 14px;
+    color: #151515;
+    text-align: center;
+}
+
+
+/* footer */
+.footer{
+    background-color:#bdb76b;
+    text-align: center;
+    padding: 1rem 0;
+    padding-top: 1.2rem;
+}
+    
+.footer .social{
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer .social a{
+    color: white;
+    font-weight: 600;
+    margin: 1rem ;
+    margin-bottom: 2rem;
+}
+
+.footer .social a:hover{
+    color: #545a2c;
+}
+
+.footer .links a:hover{
+    color: #15222C;
+}
+
+.footer .links{
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+}
+
+.footer .links a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer .credit{
+    font-size: 0.8rem;
+    color: #15222C;
+}
+
+.footer .credit a{
+    color: #010101;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 85%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 75%;
+    }
+
+    #bar{
+        display: inline-block;
+        font-size: x-large;
+    }
+
+    .navbar .menu{
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       background-color: #fff;
+       width: 15rem;
+       height: 100vh;
+    }
+
+    .navbar .menu.active{
+        right: 0;
+    }
+
+    .menu li{
+        display: block;
+        font-size: 1.2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+    #search{
+        display: none;
+    }
+
+    .icon .order{
+        display: none;
+    }
+
+    section .tulisan{
+        font-size: 75%;
+    }
+}
+
+/* mobile */
+@media (max-width: 450px){
+    html{
+        font-size: 58%;
+    }
+}
